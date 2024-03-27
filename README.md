@@ -1,4 +1,6 @@
-# React + TypeScript + Vite
+# aiqfome - frontend - pedro bandeira
+
+feito em React, state management com ContextAPI e estilização ~na unha 💅~ com SCSS
 
 breakpoint do layout mobile: 390px;
 
