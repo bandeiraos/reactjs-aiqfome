@@ -1,0 +1,50 @@
+.amount-button {
+    display: flex;
+    align-items: center;
+
+    &.big-btn {
+        button:not(.custom-btn) {
+            width: 32px;
+            height: 32px;
+            font-size: 18px;
+        }
+    }
+    
+    button {
+        &:not(.custom-btn) {
+            width: 24px;
+            height: 24px;
+            font-size: 12px;
+            border-radius: 24px;
+            border: 1px solid #00A296;
+            color: #00A296;
+            background: transparent;
+
+            &:disabled {
+                color: #A8ADB7;
+                background: #EEF0F5;
+                border-color: #EEF0F5;
+            }
+        }
+
+        &.custom-btn {
+            background: transparent;
+            border: 0;
+
+            svg {
+                margin-top: 4px;
+                width: 26px;
+                height: 26px;
+            }
+        }
+
+        &:not(:disabled) {
+            cursor: pointer;
+        }
+    }
+
+    > span {
+        margin: 0 16px;
+        font-weight: 700;
+    }
+}

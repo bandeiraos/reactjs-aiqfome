@@ -1,0 +1,17 @@
+.product-item-wrapper {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: space-between;
+
+    .pi-widget {
+        display: flex;
+
+        > div {
+            margin-right: 8px;
+
+        }
+    }
+
+
+}

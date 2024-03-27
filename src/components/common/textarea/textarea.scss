@@ -1,0 +1,20 @@
+.textarea {
+    justify-content: center;
+    align-items: center;
+
+    > textarea {
+        height: 60px;
+        width: 100%;
+        max-width: 644px;
+        border: 1px solid #CDD1D9;
+        border-radius: 4px;
+        padding: 10px 12px;
+
+        &::placeholder {
+            color: #6D6F73;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 19px;
+        }
+    }
+}

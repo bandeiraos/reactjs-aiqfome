@@ -1,0 +1,50 @@
+.radio-button-wrapper {
+    label {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        
+        input {
+            display: none;
+        }
+
+        .input-svg {
+            margin-right: 8px;
+            display: flex;
+        }
+
+        .disc-icon {
+            margin-right: 8px;
+            display: flex;
+        }
+
+        .item-info {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex: 1;
+
+            .item-name {
+                font-size: 14px;
+    
+                &.checked {
+                    font-weight: 700;
+                }
+            }
+    
+            .item-price {
+                .p-discount {
+                    font-size: 12px;
+                    font-weight: 700;
+    
+                    strong {
+                        color: #02A117;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+
+        
+    }
+}

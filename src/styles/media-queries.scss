@@ -1,0 +1,128 @@
+/* media queries */
+@media screen and (max-width: 1024px) {
+    header {
+      justify-content: space-between;
+
+      .location-wrapper {
+        margin-right: 0;
+      }
+      .search-and-buttons {
+        flex: unset;
+
+          .search-wrapper {
+            display: none;
+          }
+    }
+  }
+
+  .order-product-wrapper {
+    padding: 24px 12px;
+  }
+
+  .order-category-wrapper {
+    padding: 16px;
+
+    .oc-content {
+      > div {
+        flex-direction: column;
+        gap: 12px;
+
+        .radio-button-wrapper, .select-button-wrapper {
+          width: unset;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding:16px;
+
+    .logo {
+      display: none;
+    }
+
+    .logo-mobile {
+      display: block;
+      margin-right: 24px;
+    }
+
+    .location-wrapper {
+        margin: 0;
+    }
+
+    .search-and-buttons {
+      flex: unset;
+
+      .buttons-wrapper {
+          .button {
+            display: none;
+          }
+
+          .variant-4 {
+            display: block;
+          }
+      }
+    }
+
+  }
+
+  .order-product-wrapper {
+    padding: 0;
+
+    .company-info {
+      display: none;
+    }
+
+    .product-info-wrapper {
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+
+      .product-img {
+        margin: 16px auto 0;
+      }
+
+      .product-info {
+        order: 1;
+        padding: 16px;
+
+        .product-info-data {
+          span {
+            font-size: 14px;
+          }
+        }
+
+        .amount-wrapper {
+          .warning {
+            transform: translate(0, -32px)
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    margin-top: 42px;
+    span:nth-child(2) {
+      padding: 0 24px;
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .order-product-wrapper .product-info-wrapper .product-img {
+    order: 0;
+    width: 100%;
+    margin: 0;
+
+    img {
+      border-radius: 0;
+    }
+  }
+
+}

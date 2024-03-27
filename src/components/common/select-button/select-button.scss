@@ -1,0 +1,41 @@
+.select-button-wrapper {
+    label {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+        input {
+            display: none;
+        }
+
+        .check-square {
+            width: 15px;
+            height: 15px;
+            border-radius: 4px;
+            border: 2px solid #A8ADB7;
+            margin-right: 8px;
+            display: flex;
+
+            &.checked {
+                background-color: #00A296;
+                border-color: #00A296;
+            }
+            
+        }
+
+        .item-info {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex: 1;
+
+            .item-name {
+                font-size: 14px;
+    
+                &.checked {
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}

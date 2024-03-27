@@ -1,0 +1,112 @@
+.order-product-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 24px 84px;
+
+    .company-info {
+        display: flex;
+        align-items: center;
+        margin-bottom: 24px;
+
+        img {
+            width: 48px;
+            height: 48px;
+            border-radius: 4px;
+            margin-right: 8px;
+        }
+
+        h1 {
+            font-size: 24px;
+
+        }
+    }
+
+    .product-info-wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 48px;
+
+        .product-info {
+            .product-info-data {
+                display: flex;
+                flex-direction: column;
+                gap: 6px;
+
+                h2 {
+                    color: #393A3C;
+                    font-size: 24px;
+                    font-weight: 700;
+                }
+
+                span {
+                    color: #6D6F73;
+                    font-weight: 600;
+
+                    &.p-price {
+                        position: relative;
+                        strong {
+                            color: #7B1FA2;
+                            font-size: 20px;
+                            font-weight: 800;
+                            display: inline-block;
+                            line-height: 27px;
+                            position: absolute;
+                            transform: translate(8px, -2px);
+                        }
+                    }
+                    &:first-child {
+                        font-weight: 700;
+
+                        
+                    }
+                }
+            }
+
+            .amount-wrapper {
+                margin-top: 32px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                position: relative;
+                
+                .warning {
+                    color: red;
+                    display: none;
+                    font-size: 12px;
+                    position: absolute;
+                    transform: translate(0, 48px);
+                    &.show {
+                        display: block;
+                    }
+                }
+
+                >div {
+                    &:first-child {
+                        display: flex;
+                        flex-direction: column;
+                        
+                        .amnt-question {
+                            font-weight: bold;
+                            font-size: 16px;
+                            margin-bottom: 6px;
+                        }
+
+                        .amnt-total {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .product-img {
+            width: 390px;
+            height: 195px;
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 12px;
+            }
+        }
+    }
+}

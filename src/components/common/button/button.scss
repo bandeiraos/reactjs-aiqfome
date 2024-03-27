@@ -1,0 +1,43 @@
+.button {
+    height: 36px;
+    padding: 10px 24px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    font-weight: 700;
+    border: 0;
+    cursor: pointer;
+    color: #FFFFFF;
+
+    &:hover {
+        opacity: .9;
+    }
+
+    > svg {
+        margin-right: 8px;
+    }
+
+    &.withIcon {
+        padding-left: 20px;
+    }
+
+    &.variant-1 {
+        background-color: #6D6F73;
+    }
+
+    &.variant-2 {
+        background-color: #F8ECFE;
+        color: #7B1FA2;
+        font-weight: 800;
+    }
+    
+    &.variant-3 {
+        background-color: #00A296;
+    }
+    
+    &.variant-4 {
+        background-color: transparent;
+        padding: 0;
+        display: none;
+    }
+}
